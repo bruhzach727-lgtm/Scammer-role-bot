@@ -99,7 +99,7 @@ async def scam(
     description="Give a member the FUCKASS_JEW role"
 )
 @app_commands.checks.has_permissions(manage_roles=True)
-async def fuckass_jew(interaction: discord.Interaction, member: discord.Member):
+async def FUCKASS_JEW(interaction: discord.Interaction, member: discord.Member):
 
     role = discord.utils.get(
         interaction.guild.roles,
