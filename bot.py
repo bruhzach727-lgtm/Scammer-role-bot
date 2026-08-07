@@ -10,7 +10,7 @@ from discord.ext import commands
 # =========================
 
 SCAM_ROLE_NAME = "SCAMMER⚠️"
-FUCKASS_JEW_ROLE_NAME = "FUCKASS JEW"
+FUCKASS_JEW_ROLE_NAME = "FUCKASS_JEW"
 SCAM_VOUCH_CHANNEL_NAME = "scam-vouches"
 VOUCHES_NEEDED = 3
 
@@ -95,11 +95,11 @@ async def scam(
             ephemeral=True
         )
 @bot.tree.command(
-    name="hacker",
-    description="Give a member the FUCKASS JEW role"
+    name="Fuckass_Jew",
+    description="Give a member the FUCKASS_JEW role"
 )
 @app_commands.checks.has_permissions(manage_roles=True)
-async def fuckass jew(interaction: discord.Interaction, member: discord.Member):
+async def fuckass_jew(interaction: discord.Interaction, member: discord.Member):
 
     role = discord.utils.get(
         interaction.guild.roles,
@@ -108,7 +108,7 @@ async def fuckass jew(interaction: discord.Interaction, member: discord.Member):
 
     if role is None:
         await interaction.response.send_message(
-            "I couldn't find the FUCKASS JEW role.",
+            "I couldn't find the FUCKASS_JEW role.",
             ephemeral=True
         )
         return
@@ -116,7 +116,7 @@ async def fuckass jew(interaction: discord.Interaction, member: discord.Member):
     await member.add_roles(role)
 
     await interaction.response.send_message(
-        f"💻 {member.mention} has been given the **FUCKASS JEW** role."
+        f"💻 {member.mention} has been given the **FUCKASS_JEW** role."
     )
 
 # =========================
